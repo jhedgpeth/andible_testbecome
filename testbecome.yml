@@ -1,0 +1,10 @@
+---
+- hosts: all
+  name: test become
+
+  tasks:
+
+  - name: who am i
+    debug:
+      msg: "running as {{ ansible_user_id }} on {{ inventory_hostname }}"
+
